@@ -1,0 +1,30 @@
+<div class="banking-form w-100">
+
+  <mat-form-field class="w-100">
+    <input matInput placeholder="Banco">
+  </mat-form-field>
+
+  <div class="d-flex w-100">
+    <mat-form-field class="w-50 mr-3">
+      <input matInput placeholder="Agencia">
+    </mat-form-field>
+
+    <mat-form-field class="w-50">
+      <input matInput placeholder="Conta">
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="w-100">
+    <mat-label> Tipo de conta </mat-label>
+    <mat-select>
+      <mat-option value="0"> Conta corrente </mat-option>
+      <mat-option value="1"> Investimento </mat-option>
+      <mat-option value="2"> Poupança </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="d-flex justify-content-end mt-5">
+    <button mat-raised-button color="primary"> Salvar </button>
+  </div>
+
+</div>

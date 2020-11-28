@@ -1,0 +1,41 @@
+<div class="contas h-100">
+
+  <div class="area-title d-flex justify-content-between w-100">
+    <div class="w-50">
+      <h2 class="font-weight-normal m-0 pt-3 pb-4">
+        Lista de Contas
+      </h2>
+    </div>
+
+    <div class="d-flex align-items-center w-50">
+      <div class="d-flex align-items-center w-50" *ngIf="displayForm">
+        <h2 class="font-weight-normal m-0 pt-3 pb-4 ml-5 pl-5">
+          Nova Conta
+        </h2>
+      </div>
+
+      <div class="d-flex justify-content-end" [ngClass]="displayForm ? 'w-50' : 'w-100'">
+        <button mat-fab aria-label="Novo Fornecedor" (click)="toggleForm()"
+          [class.close]="displayForm" class="has-transition">
+          <mat-icon> add </mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="area-content d-flex">
+    <div class="h-100" [ngClass]="displayForm ? 'w-50' : 'w-100'">
+      <app-contas-grid> </app-contas-grid>
+    </div>
+
+    <div class="d-flex w-50" *ngIf="displayForm">
+
+      <mat-divider vertical="true" class="mx-5"> </mat-divider>
+
+      <div class="w-100">
+        <app-contas-form> </app-contas-form>
+      </div>
+    </div>
+  </div>
+
+</div>

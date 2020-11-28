@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+
+.app-navigation {
+  height: 100%;
+
+  .nav-icon {
+    color: mat-color($mat-deep-purple, 200);
+  }
+
+  .active {
+    &,
+    .nav-icon {
+      color: mat-color($mat-deep-purple, 500);
+      background: mat-color($mat-deep-purple, 50);
+    }
+  }
+}
+
+:host ::ng-deep
+.app-navigation {
+
+  .mat-list-base {
+    height: calc(100% - 3rem);
+    padding: 0;
+  } 
+
+}

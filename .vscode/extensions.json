@@ -1,0 +1,13 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+    "johnpapa.Angular2",
+    "PKief.material-icon-theme",
+    "guillaumedoutriaux.name-that-color",
+    "christian-kohler.path-intellisense",
+    "eg2.tslint",
+    // "kisstkondoros.typelens",
+  ]
+}

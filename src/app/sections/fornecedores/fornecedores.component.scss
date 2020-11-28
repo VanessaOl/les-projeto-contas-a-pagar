@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+
+.fornecedores {
+
+  .area-title { 
+    height: 70px;
+  }
+
+  .area-content { 
+    height: calc(100% - 70px);
+  }
+
+  .has-transition {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+  }
+
+  .close {
+    transform: rotate(45deg);
+    background: mat-color($mat-red, 500);
+  }
+
+}

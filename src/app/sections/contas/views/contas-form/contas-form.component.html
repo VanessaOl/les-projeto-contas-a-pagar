@@ -1,0 +1,33 @@
+<div class="contas-form w-100">
+
+  <mat-form-field class="w-100">
+    <input matInput placeholder="Codigo de barras">
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label> Fornecedor </mat-label>
+    <mat-select>
+      <mat-option *ngFor="let item of listFornecedores" [value]="item.nome">
+        {{ item.nome }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-divider class="mt-4 mb-3"> </mat-divider>
+
+  <div class="d-flex w-100">
+    <mat-form-field class="w-50 mr-3">
+      <input matInput placeholder="Data de vencimento" readonly>
+    </mat-form-field>
+
+    <mat-form-field class="w-50">
+      <input matInput placeholder="Valor" readonly>
+    </mat-form-field>
+  </div>
+
+  <div class="d-flex justify-content-end mt-5">
+    <button mat-raised-button color="primary" class="mr-3"> Pagar </button>
+    <button mat-raised-button color="primary"> Salvar </button>
+  </div>
+
+</div>
